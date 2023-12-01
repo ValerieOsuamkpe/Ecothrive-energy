@@ -1,0 +1,40 @@
+/* here is for google font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    margin: 1% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 15%;
+}
+.logo img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    gap: 38px;
+}
+nav ul li {
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li a {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+nav ul li a span {
+    color: #239C2F;
+}
+/* End of nav section (header) */
+
