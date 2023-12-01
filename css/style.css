@@ -36,5 +36,8 @@ nav ul li a {
 nav ul li a span {
     color: #239C2F;
 }
+.menu {
+    display: none;
+}
 /* End of nav section (header) */
 
