@@ -1,9 +1,12 @@
-/* here is for google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     margin: 1% 7%;
@@ -40,4 +43,304 @@ nav ul li a span {
     display: none;
 }
 /* End of nav section (header) */
+
+/* hero page */
+.hero {
+    position: relative;
+}
+.hero-img {
+    width: 100%;
+    height: 49vh;
+}
+.hero .hero-img img {
+    width: 100%;
+    height: 100%;
+}
+.hero h3 {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* boxes */
+.section {
+    margin: 0 7%;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+.box div:first-of-type {
+    height: 46vh;                      
+     /* height: 23vh; ------- height for others */
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+.box .text h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 24.38px;
+    padding-bottom: 12px;
+}
+.box .text p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.box1 .text,
+.box3 .text,
+.box5 .text {
+    grid-row: 1;
+}
+
+/* footer */
+footer {
+    background: #1E1E1E;
+}
+.foot-main {
+    display: flex; 
+    flex-direction: column;
+    padding: 99.73px 7% 2%;
+    gap: 3rem;
+    color: #e9e3e3;
+}
+.foot-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.foot-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+}
+.foot-info h3 {
+    color:  #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+}
+.foot-info .foot-menu ul li {
+    list-style: none;
+    padding-bottom: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.foot-info .foot-menu ul li a {
+    color: #e9e3e3;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40.95px;
+}
+.email, 
+.number {
+    display: flex;
+    gap: 8.53px;
+}
+.email a, 
+.number a {
+    color: #e9e3e3;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 13.65px;
+}
+.social p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+.icons .img {
+    width: 27.3px;
+    height: 27.3px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative
+}
+.icons img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    right: 4px;
+}
+.copy {
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+}
+
+/* laptop view  1020px*/
+@media (max-width: 1090px) {
+    .logo {
+        width: 16%;
+    }
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+    .hero-img {
+        height: 40vh;
+    }
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box div:first-of-type {                    
+        height: 27vh;
+    }
+    .box .text h4 {
+        font-size: 1.2rem;
+    }
+    .box .text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .logo {
+        width: 18%;
+    }
+    nav ul li a {
+        font-size: 0.5rem;
+    }
+    .box .text h4 {
+        font-size: 1rem;
+    }
+    .box .text p {
+        font-size: .9rem;
+    }
+
+     /* footer (including mobile)*/
+     .foot-main {
+        padding: 50px 7% 2%;
+        gap: 2rem;
+    }
+    .foot-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .foot-content .foot-logo {
+        width: 20%;
+    }
+    .foot-logo img {
+        width: 100%;
+    }
+    .foot-contact {
+        grid-row: 1;
+    }
+    .foot-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 2rem;
+    }
+    .foot-info h3 {
+        font-size: 1rem;
+        padding-bottom: 13.65px;
+    }
+    .foot-info .foot-menu ul li {
+        padding-bottom: 12px;
+        font-size: 0.7rem;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .number {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 12px;
+    }
+    .email a, 
+    .number a,
+    .social p {
+        font-size: 0.7rem;
+    }
+    .social {
+        gap: 15px;
+    }
+    .copy {
+        font-size: .625rem
+    }
+}
+
+/* mobile view*/
+@media (max-width: 560px) {
+    .logo {
+        width: 25%;
+    }
+    nav {     
+        display: none;
+    }
+    .menu {
+        display: revert;
+    }
+
+    /* hero page */
+    .hero-img {
+        height: 27vh;
+    }
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    /* boxes */
+    .box {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        margin-bottom: 50px;
+    }
+    .box div:first-of-type {                  
+        height: auto;
+    }
+    .box1 {
+        margin-top: 50px;
+    }
+    .box1 .text,
+    .box3 .text,
+    .box5 .text {
+        grid-row: 2;
+    }
+    .box .text h4 {
+        font-size: 1.25rem;
+        padding-bottom: 12px;
+    }
+    .box .text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+}
 
