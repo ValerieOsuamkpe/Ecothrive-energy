@@ -82,13 +82,14 @@ nav ul li a span {
 .section1 > div > button {
     border-radius: 3px;
     background: #F9AF16;
-    padding: 10px;
+    padding: 15px;
     border: none;
 }
 .section1 > div > button > a {
     color: #000;
     font-size: 1rem;
     font-weight: 600;
+    padding: 15px 20px;
 }
 /* End of Section One (Hero Section) */
 
@@ -211,12 +212,17 @@ nav ul li a span {
 .wrap5 .wrap5-box h3 {
     position: absolute;
     bottom: 8%;
-    left: 5%;
+    left: 10%;
     right: 10%;
     color: #000;
     font-size: 1.125rem;
     font-weight: 700;
     text-align: center;
+}
+.wrap5 .two h3,
+.wrap5 .three h3,
+.wrap5 .six h3 {
+    bottom: 15%;
 }
 .wrap5 .wrap5-box img {
     width: 100%;
@@ -316,6 +322,9 @@ footer {
 /* large tablet view*/
 
 @media (max-width: 1109px) {
+    /* body {
+        background-color: green;
+    } */
     nav ul li a {
         font-size: 0.8rem;
 
@@ -332,6 +341,7 @@ footer {
     }
     .section1 > div > button > a {
         font-size: 0.8rem;
+        padding: 23px 20px;
     }
 
     /* section 3 */
@@ -347,6 +357,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+    /* body {
+        background: pink;
+    } */
 
     /* section 1 */
     .section1 > div:last-of-type {
@@ -397,12 +410,20 @@ footer {
         bottom: 7%;
         font-size: 0.75rem;
     }
+    .wrap5 .two h3,
+    .wrap5 .three h3,
+    .wrap5 .six h3 {
+        bottom: 15%;
+    }
 }
 
 
 /* mobile view - from 600px down*/
 /* @media only screen and (max-width: 600px)  */
 @media (max-width: 600px) {
+    /* body {
+        background-color: limegreen;
+    } */
     /* Header */
     .logo {
         width: 25%;
@@ -421,9 +442,13 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: #239C2F;
         transition: top 1s ease;
         display: none;
+    }
+    nav ul li a span {  /* transfer */
+        color: #F9AF16;
+        font-weight: bold;
     }
     .closemenu {
         position: absolute;
@@ -459,6 +484,10 @@ footer {
     .wrap5 .wrap5-box h3 {
         bottom: 7%;
         font-size: 0.6rem;
+    }
+    .wrap5 .two h3,
+    .wrap5 .three h3 {
+        bottom: 15%;
     }
 
     /* footer ( mobile)*/
