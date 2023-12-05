@@ -439,21 +439,20 @@ footer {
         display: revert;
     }
     .section1 > div:last-of-type {
-        top: 35%;
+        top: 30%;
     }
     .section1 > div > h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 600;
     }
     .section1 > div > p {
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: 0.5rem;
     }
     .section1 > div > button {
-        padding: 8px;
+        padding: 6px;
     }
     .section1 > div > button > a {
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
         /* section 5 */
