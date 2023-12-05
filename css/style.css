@@ -384,7 +384,6 @@ header {
     grid-template-rows: auto;
 }
 /* Section five (Our Services) */
-.section5 { }
 .section5 > .wrap5 { }
 .one, .two, .three, .four, .five, .six {
     width: 100%;
