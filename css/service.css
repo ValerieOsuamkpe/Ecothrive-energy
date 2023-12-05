@@ -39,9 +39,19 @@ nav ul li a {
 nav ul li a span {
     color: #239C2F;
 }
-.menu {
+
+/* newwwwwwwwwwww */
+.menu,
+.closemenu {
     display: none;
 }
+.closemenu {    /* newwww */
+    width: 20px;
+}
+.closemenu img {    /* newwww */
+    width: 100%;
+}
+
 /* End of nav section (header) */
 
 /* hero page */
@@ -78,7 +88,6 @@ nav ul li a span {
 }
 .box div:first-of-type {
     height: 46vh;                      
-     /* height: 23vh; ------- height for others */
 }
 .box img {
     width: 100%;
@@ -236,7 +245,7 @@ footer {
     }
 
      /* footer (including mobile)*/
-     .foot-main {
+    .foot-main {
         padding: 50px 7% 2%;
         gap: 2rem;
     }
@@ -296,16 +305,33 @@ footer {
     }
 }
 
-/* mobile view*/
+    /* mobile view*/
 @media (max-width: 560px) {
     .logo {
         width: 25%;
     }
-    nav {     
+    .menu,
+    .closemenu {        /* newwww */
+        display: block;
+    }
+    .main-menu {    /* newwww */
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: top 1s ease;
         display: none;
     }
-    .menu {
-        display: revert;
+    .closemenu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     /* hero page */
@@ -314,6 +340,13 @@ footer {
     }
     .hero h3 {
         font-size: 1.5rem;
+    }
+
+    /* decision on the colour to use */
+    nav ul li a {
+        color: #000000;
+        font-size: 1rem;
+        /* color: black; */
     }
 
     /* boxes */

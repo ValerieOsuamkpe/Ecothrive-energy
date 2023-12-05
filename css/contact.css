@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 header {
     margin: 1% 7%;
     display: flex;
@@ -36,8 +39,159 @@ nav ul li a {
 nav ul li a span {
     color: #239C2F;
 }
-.menu {
+.menu,
+.closemenu {
     display: none;
 }
 /* End of nav section (header) */
+
+
+
+/* footer */
+footer {
+    background: #1E1E1E;
+}
+.foot-main {
+    display: flex; 
+    flex-direction: column;
+    padding: 99.73px 7% 2%;
+    gap: 3rem;
+    color: #e9e3e3;
+}
+.foot-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.foot-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+}
+.foot-info h3 {
+    color:  #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+}
+.foot-info .foot-menu ul li {
+    list-style: none;
+    padding-bottom: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.foot-info .foot-menu ul li a {
+    color: #e9e3e3;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40.95px;
+}
+.email, 
+.number {
+    display: flex;
+    gap: 8.53px;
+}
+.email a, 
+.number a {
+    color: #e9e3e3;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 13.65px;
+}
+.social p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+.icons .img {
+    width: 27.3px;
+    height: 27.3px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative
+}
+.icons img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    right: 4px;
+}
+.copy {
+    text-align: center;
+}
+
+
+
+ /* RESPONSIVENESS FOR MOBILE*/
+ /* .foot-main {
+    padding: 50px 7% 2%;
+    gap: 2rem;
+}
+.foot-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.foot-content .foot-logo {
+    width: 20%;
+}
+.foot-logo img {
+    width: 100%;
+}
+.foot-contact {
+    grid-row: 1;
+}
+.foot-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+}
+.foot-info h3 {
+    font-size: 1rem;
+    padding-bottom: 13.65px;
+}
+.foot-info .foot-menu ul li {
+    padding-bottom: 12px;
+    font-size: 0.7rem;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.number {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 12px;
+}
+.email a, 
+.number a,
+.social p {
+    font-size: 0.7rem;
+}
+.social {
+    gap: 15px;
+}
+.copy {
+    font-size: .625rem
+} */
 

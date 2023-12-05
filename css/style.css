@@ -1,9 +1,12 @@
-/* here is for google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     margin: 1% 7%;
@@ -36,8 +39,15 @@ nav ul li a {
 nav ul li a span {
     color: #239C2F;
 }
-.menu {
+.menu,
+.closemenu {
     display: none;
+}
+.closemenu {    
+    width: 20px;
+}
+.closemenu img {   
+    width: 100%;
 }
 /* End of nav section (header) */
 
@@ -45,151 +55,106 @@ nav ul li a span {
 .section1 {
     position: relative;
 }
-.section1 > img {
+.section1 .desk-img {
     width: 100%;
 }
-#mobile {
+.section1 .desk-img img {
+    width: 100%;
+}
+.section1 .desk-img img:last-of-type {
     display: none;
 }
-.section1 > div {
+.section1 > div:last-of-type {
     position: absolute;
-    bottom: 0;
+    top: 48%;
     color: white;
-    padding-left: 7%;
-    width: 100%;
-    padding-top: 16.12rem;
-    padding-bottom: 5.56rem;
+    margin: 0 7%;
 }
 .section1 > div > h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.8125rem;
     font-weight: 600;
 }
 .section1 > div > p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5625rem;
     font-weight: 600;
+    margin-bottom: 5%;
+}
+.section1 > div > button {
+    border-radius: 3px;
+    background: #F9AF16;
+    padding: 10px;
+    border: none;
 }
 .section1 > div > button > a {
     color: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
-    border-radius: 0.1875rem;
-    background: #F9AF16;
-    padding: 0.625rem;
-    justify-content: center;
-    align-items: center;
-}
-.section1 > div > button {
-    padding: 0.625rem;
-    border: none;
-    border-radius: 0.1875rem;
-    background: #F9AF16;
-    margin-top: 3.12rem;
 }
 /* End of Section One (Hero Section) */
 
 /* Section two (About Us) */
 .section2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     align-items: center;
-    padding-left: 7%;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
-    width: 100%;
-    gap: 4.81rem;
+    justify-content: space-between;
+    padding: 10% 7%;  
+    gap: 77px;
 }
 .section2 > .right {
-    width: 40%;
     color: #000;
 }
-.section2 .inside {
-    display: none;
-}
 .section2 > .right > h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
 }
 .section2 > .right > p {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
-    margin-top: 0.94rem;
+    line-height: 23.01px;
+    margin-top: 15px;
 }
-.section2 > .left {
-    width: 50%;
-    padding-right: 3%;
-}
-.section2 > .left > img {
+.section2 > .left img {
     width: 100%;
 }
 /* End of Section Two (About Us) */
 
 /* Section three (Benefits) */
 .section3 {
-    padding: 7%;
+    padding: 0 7%;
 }
 .section3 > h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 3.13rem;
+    text-transform: capitalize;
+    margin-bottom: 5%;
 }
 .section3 > .wrap3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 50px;
 }
-.wrap3 > div > h3 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-.first, .second, .third, .fourth, .fifth, .sixth {
+.section3 .benefit-box {
     position: relative;
 }
-.first > h3 {
-    position: absolute;
-    top: 82%;
-    left: 2.37rem;
+.section3 > .wrap3 img {
+    width: 100%;
 }
-.second > h3 {
+.section3 > .wrap3 h3 {
     position: absolute;
-    top: 82%;
-    left: 2.37rem;
-}
-.third > h3 {
-    position: absolute;
-    top: 75%;
-    left: 1.94rem;
-    width: 80%;
-}
-.fourth > h3 {
-    position: absolute;
-    top: 82%;
-    left: 2.37rem;
-}
-.fifth > h3 {
-    position: absolute;
-    top: 82%;
-    left: 1.25rem;
-}
-.sixth > h3 {
-    position: absolute;
-    top: 75%;
-    left: 2.38rem;
-    width: 70%;
+    bottom: 15%;
+    left: 10%;
+    right: 5%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
 }
 /* End of Section three (Benefits) */
 
 /* Section Four (Core Values) */
 .section4 {
-    padding: 6.5% 7%;
+    padding: 10% 7%;
 }
 .section4 > h2 {
     font-family: 'Montserrat', sans-serif;
@@ -210,9 +175,6 @@ nav ul li a span {
 .wrap4 > div > div > img {
     display: block;
 }
-.section4 > .wrap4 > div > div {
-    /* border: #F9AF16 dotted; */
-}
 .wrap4 > div > div > h3 {
     color: #000;
     font-family: 'Montserrat', sans-serif;
@@ -231,181 +193,333 @@ nav ul li a span {
 
 /* Section Five (Our Services) */
 .section5 {
-    padding: 6.5% 7%;
+    padding: 0 7% 10%;
 }
-.section5 > h2 {
-    font-family: 'Montserrat', sans-serif;
+.section5 h2 {
     font-size: 1.875rem;
     font-weight: 700;
-    margin-bottom: 3.12rem;
+    margin-bottom: 5%;
 }
 .section5 > .wrap5 {
-    gap: 1.56rem 4.13rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
 }
-.wrap5 > div > h3 {
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-.one, .two, .three, .four, .five, .six {
+.wrap5 .wrap5-box {
     position: relative;
 }
-.one > h3 {
+.wrap5 .wrap5-box h3 {
     position: absolute;
-    top: 78%;
-    left: 0.62rem;
-    width: 90%;
+    bottom: 8%;
+    left: 5%;
+    right: 10%;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
     text-align: center;
 }
-.two > h3 {
-    position: absolute;
-    top: 80%;
-    left: 3.84rem;
-}
-.three > h3 {
-    position: absolute;
-    top: 80%;
-    left: 5.75rem;
-}
-.four > h3 {
-    position: absolute;
-    top: 78%;
-    left: 0rem;
-    width: 95%;
-    text-align: center;
-}
-.five > h3 {
-    position: absolute;
-    top: 78%;
-    left: 0.8rem;
-    width: 80%;
-    text-align: center;
-}
-.six > h3 {
-    position: absolute;
-    top: 80%;
-    left: 3.03rem;
+.wrap5 .wrap5-box img {
+    width: 100%;
 }
 /* End of Section Five (Our services) */
 
-/* Footer should be here */
-
-
-
-/* Responsiveness @media queries */
-/* mobile view - from 600px down*/
-@media only screen and (max-width: 600px) {
-/* Header */
-header {
-    display: none;
+/* footer */
+footer {
+    background: #1E1E1E;
 }
-/* Section one (Hero Section) */
-.section1 {
-    display: ;
+.foot-main {
+    display: flex; 
+    flex-direction: column;
+    padding: 99.73px 7% 2%;
+    gap: 3rem;
+    color: #e9e3e3;
 }
-.section1 #desktop {
-    display: none;
-}
-.section1 #mobile {
+.foot-content {
     display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
-.section1 > div {
-    padding-top: 4.38rem;
-    padding-bottom: 0.8rem;
-    padding-left: 7%;
-    padding-right: 7%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.foot-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
 }
-.section1 > div > h1 {
-    font-size: 1.5rem;
-    width: 100%;
+.foot-info h3 {
+    color:  #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
 }
-.section1 > div > p {
-    font-size: 0.75rem;
-    width: 11.25rem;
-    margin-top: 0.69rem;
+.foot-info .foot-menu ul li {
+    list-style: none;
+    padding-bottom: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
-.section1 > div > button > a {
-    font-size: 0.65331rem;
-    padding: 0.36rem;
+.foot-info .foot-menu ul li a {
+    color: #e9e3e3;
 }
-.section1 > div > button {
-    padding: 0.36rem;
-    margin-top: 1.25rem;
-}
-/* Section two (About Us) */
-.section2 {
+.contact-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 40.95px;
 }
-.section2 .right {
-    width: 80%;
-}
-.section2 .inside {
+.email, 
+.number {
     display: flex;
-    /* padding-right: 3%; */
+    gap: 8.53px;
 }
-.section2 .inside > img {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.email a, 
+.number a {
+    color: #e9e3e3;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
-.section2 .left {
-    display: none;
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 13.65px;
 }
-/* Section three (Benefits) */
-.section3 {
-    /* display: none; */
+.social p {
+    font-size: 0.8rem;
+    font-weight: 400;
 }
-.section3 > .wrap3 { }
-.first, .second, .third, .fourth, .fifth, .sixth {
-    width: 100%;
+.icons {
+    display: flex;
+    gap: 1rem;
 }
-.wrap3 > div > img {
-    width: 100%;
+.icons .img {
+    width: 27.3px;
+    height: 27.3px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative
 }
-.wrap3 > div > h3 {
-    font-size: 0.875rem;
+.icons img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    right: 4px;
 }
-
-/* Section four (Core Values) */
-.section4 {
-    /* display: none; */
+.copy {
+    text-align: center;
 }
-.section4 > .wrap4 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
-/* Section five (Our Services) */
-.section5 > .wrap5 { }
-.one, .two, .three, .four, .five, .six {
-    width: 100%;
-}
-.wrap5 > div > img {
-    width: 100%;
-}
-.wrap5 > div > h3 {
-    font-size: 0.875rem;
-}
-
-}
-
-
+/* End of footer */
 
 
 /* Responsiveness @media queries */
-/* tablet view - from 1100px to 600px*/
-@media screen and (max-width: 1100px) and (min-width: 600px) {
+
+/* large tablet view*/
+
+@media (max-width: 1109px) {
+    nav ul li a {
+        font-size: 0.8rem;
+
+        /* section 1 */
+        
+    }.section1 > div > h1 {
+        font-size: 2rem;
+    }
+    .section1 > div > p {
+        font-size: 1rem;
+    }
+    .section1 > div > button {
+        padding: 5px;
+    }
+    .section1 > div > button > a {
+        font-size: 0.8rem;
+    }
+
+    /* section 3 */
+    .section3 > .wrap3 h3 {
+        bottom: 15%;
+        font-size: 1rem;
+    }
+
+    /* section 5 */
+    .wrap5 .wrap5-box h3 {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* section 1 */
+    .section1 > div:last-of-type {
+        top: 40%;
+    }
+    .section1 > div > h1 {
+        font-size: 1.8rem;
+    }
+    .section1 > div > p {
+        font-size: .9rem;
+    }
+
+    /* Section two (About Us) */
+    .section2 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .section2 > .left {
+        grid-row: 1;
+    }
+
+    /* Section three (Benefits) */
+    .section3 > h2 {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+    }
+    .section3 > .wrap3 {
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+    .section3 > .wrap3 h3 {
+        font-size: 0.875rem;
+    }
+
+    /* Section four (Core Values) */
     .section4 > .wrap4 {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
+
+    /* Section five (Our Services) */
+    .section5 > .wrap5 {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .wrap5 .wrap5-box h3 {
+        bottom: 7%;
+        font-size: 0.75rem;
+    }
+}
+
+
+/* mobile view - from 600px down*/
+/* @media only screen and (max-width: 600px)  */
+@media (max-width: 600px) {
+    /* Header */
+    .logo {
+        width: 25%;
+    }
+    .menu,
+    .closemenu {        /* newwww */
+        display: block;
+    }
+    .main-menu {    /* newwww */
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: top 1s ease;
+        display: none;
+    }
+    .closemenu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Section one (Hero Section) */
+    .section1 .desk-img img:first-of-type {
+        display: none;
+    }
+    .section1 .desk-img img:last-of-type {
+        display: revert;
+    }
+    .section1 > div:last-of-type {
+        top: 35%;
+    }
+    .section1 > div > h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .section1 > div > p {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .section1 > div > button {
+        padding: 8px;
+    }
+    .section1 > div > button > a {
+        font-size: .7rem;
+    }
+
+        /* section 5 */
+    .wrap5 .wrap5-box h3 {
+        bottom: 7%;
+        font-size: 0.6rem;
+    }
+
+    /* footer ( mobile)*/
+    .foot-main {
+        padding: 50px 7% 2%;
+        gap: 2rem;
+    }
+    .foot-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .foot-content .foot-logo {
+        width: 20%;
+    }
+    .foot-logo img {
+        width: 100%;
+    }
+    .foot-contact {
+        grid-row: 1;
+    }
+    .foot-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 2rem;
+    }
+    .foot-info h3 {
+        font-size: 1rem;
+        padding-bottom: 13.65px;
+    }
+    .foot-info .foot-menu ul li {
+        padding-bottom: 12px;
+        font-size: 0.7rem;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .number {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 12px;
+    }
+    .email a, 
+    .number a,
+    .social p {
+        font-size: 0.7rem;
+    }
+    .social {
+        gap: 15px;
+    }
+    .copy {
+        font-size: .625rem
+    }
+
 }
