@@ -39,16 +39,14 @@ nav ul li a {
 nav ul li a span {
     color: #239C2F;
 }
-
-/* newwwwwwwwwwww */
 .menu,
 .closemenu {
     display: none;
 }
-.closemenu {    /* newwww */
+.closemenu {   
     width: 20px;
 }
-.closemenu img {    /* newwww */
+.closemenu img {   
     width: 100%;
 }
 
@@ -234,9 +232,6 @@ footer {
     .logo {
         width: 18%;
     }
-    nav ul li a {
-        font-size: 0.5rem;
-    }
     .box .text h4 {
         font-size: 1rem;
     }
@@ -311,10 +306,10 @@ footer {
         width: 25%;
     }
     .menu,
-    .closemenu {        /* newwww */
+    .closemenu {       
         display: block;
     }
-    .main-menu {    /* newwww */
+    .main-menu {    
         height: 50vh;
         position: fixed;
         top: 0;
@@ -346,7 +341,6 @@ footer {
     nav ul li a {
         color: #000000;
         font-size: 1rem;
-        /* color: black; */
     }
 
     /* boxes */
