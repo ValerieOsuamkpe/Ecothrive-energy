@@ -1,49 +1,146 @@
-/* here is for google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 header {
     margin: 1% 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     width: 15%;
 }
+
 .logo img {
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 nav ul {
     display: flex;
     gap: 38px;
 }
+
 nav ul li {
     display: inline-flex;
     list-style: none;
 }
+
 nav ul li a {
     color: #000000;
     font-size: 1rem;
     font-weight: 400;
 }
+
 nav ul li a span {
     color: #239C2F;
 }
+
 .menu,
 .closemenu {
     display: none;
 }
+
 /* End of nav section (header) */
+
+/* main section of contact page begins here */
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    /* height: 49vh; */
+}
+
+.hero .hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 48%;
+    left: 41%;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.contact-backimg h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 8%;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact-details {
+    display: flex;
+    padding: 100px;
+    background: linear-gradient(0deg, #CEC4C4, #CEC4C4),
+}
+
+.contact-details h4{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3% 5%;
+    margin: 3%;
+    /* line-height: 24px; */
+
+}
+
+.contact-icons {
+    border: 1px solid rgba(206, 196, 196, 1);
+    flex: 1;
+    padding: 4% 2%;
+    /* box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08); */
+    text-align: center;
+    border-radius: 8px;
+    margin: 3%;
+}
+
+.contact-icons img {
+    width: 70px;
+}
+.contact-icons p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.icon {
+    align-content: center;
+    width: 80%;
+    padding-top: 2%;
+}
+.contact-location{
+    padding: 5%;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    /* line-height: 24px; */
+
+}
+.contact-numbers{
+    padding: 5%;
+    /* justify-content: space-around; */
+    margin: 3%;
+}
 
 
 
@@ -51,30 +148,35 @@ nav ul li a span {
 footer {
     background: #1E1E1E;
 }
+
 .foot-main {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding: 99.73px 7% 2%;
     gap: 3rem;
     color: #e9e3e3;
 }
+
 .foot-content {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
+
 .foot-info {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .foot-info h3 {
-    color:  #FFFFFF;
+    color: #FFFFFF;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
     padding-bottom: 15px;
 }
+
 .foot-info .foot-menu ul li {
     list-style: none;
     padding-bottom: 12px;
@@ -82,38 +184,46 @@ footer {
     font-weight: 400;
     font-size: 0.8rem;
 }
+
 .foot-info .foot-menu ul li a {
     color: #e9e3e3;
 }
+
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     gap: 40.95px;
 }
-.email, 
+
+.email,
 .number {
     display: flex;
     gap: 8.53px;
 }
-.email a, 
+
+.email a,
 .number a {
     color: #e9e3e3;
     font-weight: 500;
     font-size: 0.8rem;
 }
+
 .social {
     display: flex;
     flex-direction: column;
     gap: 13.65px;
 }
+
 .social p {
     font-size: 0.8rem;
     font-weight: 400;
 }
+
 .icons {
     display: flex;
     gap: 1rem;
 }
+
 .icons .img {
     width: 27.3px;
     height: 27.3px;
@@ -121,6 +231,7 @@ footer {
     background-color: white;
     position: relative
 }
+
 .icons img {
     width: 70%;
     height: 70%;
@@ -129,14 +240,39 @@ footer {
     left: 4px;
     right: 4px;
 }
+
 .copy {
     text-align: center;
 }
+/* responsiveness for contact mobile */
 
+@media (max-width: 560px) {
 
+    /* hero page */
+    .hero-img {
+        height: 27vh;
+    }
 
- /* RESPONSIVENESS FOR MOBILE*/
- /* .foot-main {
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-details {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .contact-icons {
+        padding: 44px;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        border-radius: 8px;
+        background-color: #fffcfc;
+    }
+}
+
+/* RESPONSIVENESS FOR MOBILE*/
+/* .foot-main {
     padding: 50px 7% 2%;
     gap: 2rem;
 }
@@ -194,4 +330,3 @@ footer {
 .copy {
     font-size: .625rem
 } */
-
