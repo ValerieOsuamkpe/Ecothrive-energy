@@ -105,16 +105,20 @@ nav ul li a span {
 .section2 > .right {
     color: #000;
 }
-.section2 > .right > h2 {
+.section2 h2 {
     font-size: 1.875rem;
     font-weight: 700;
 }
+
 .section2 > .right > p {
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
     line-height: 23.01px;
     margin-top: 15px;
+}
+.section2 .left h2 {
+    display: none;
 }
 .section2 > .left img {
     width: 100%;
@@ -322,9 +326,6 @@ footer {
 /* large tablet view*/
 
 @media (max-width: 1109px) {
-    /* body {
-        background-color: green;
-    } */
     nav ul li a {
         font-size: 0.8rem;
 
@@ -337,11 +338,10 @@ footer {
         font-size: 1rem;
     }
     .section1 > div > button {
-        padding: 5px;
+        padding: 10px;
     }
     .section1 > div > button > a {
         font-size: 0.8rem;
-        padding: 23px 20px;
     }
 
     /* section 3 */
@@ -357,10 +357,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-    /* body {
-        background: pink;
-    } */
-
     /* section 1 */
     .section1 > div:last-of-type {
         top: 40%;
@@ -377,53 +373,16 @@ footer {
         grid-template-columns: 1fr; 
         gap: 20px;
     }
+    .section2 .right h2 {
+        display: none;
+    }
     .section2 > .left {
         grid-row: 1;
     }
-
-    /* <!-- BACKUP: ONLY OLA ALLOWED HERE --> */
-
-    /* .section2 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 7%;
-        padding-top: 6.25rem;
-        padding-bottom: 6.25rem;
-        width: 100%;
-        gap: 4.81rem;
+    .section2 .left h2 {
+        display: revert;
+        margin-bottom: 15px;
     }
-    .section2 > .right {
-        width: 40%;
-        color: #000;
-    }
-    .section2 .inside {
-        display: none;
-    }
-    .section2 > .right > h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.875rem;
-        font-weight: 700;
-    }
-    .section2 > .right > p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: justify;
-        margin-top: 0.94rem;
-    }
-    .section2 > .left {
-        width: 50%;
-        padding-right: 3%;
-    }
-    .section2 > .left > img {
-        width: 100%;
-    } */
-
-
-
-
-    
 
     /* Section three (Benefits) */
     .section3 > h2 {
@@ -464,11 +423,7 @@ footer {
 
 
 /* mobile view - from 600px down*/
-/* @media only screen and (max-width: 600px)  */
 @media (max-width: 600px) {
-    /* body {
-        background-color: limegreen;
-    } */
     /* Header */
     .logo {
         width: 25%;
