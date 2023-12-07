@@ -319,16 +319,22 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: #239C2F;
         transition: top 1s ease;
         display: none;
+    }
+    nav ul li a {
+        font-size: 0.9rem;  
+    }
+    nav ul li a span {  
+        color: #F9AF16;
+        font-weight: bold;
     }
     .closemenu {
         position: absolute;
         top: 20px;
         right: 20px;
     }
-
     /* hero page */
     .hero-img {
         height: 27vh;
@@ -336,13 +342,6 @@ footer {
     .hero h3 {
         font-size: 1.5rem;
     }
-
-    /* decision on the colour to use */
-    nav ul li a {
-        color: #000000;
-        font-size: 1rem;
-    }
-
     /* boxes */
     .box {
         grid-template-columns: 1fr; 

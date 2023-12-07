@@ -327,11 +327,10 @@ footer {
 
 @media (max-width: 1109px) {
     nav ul li a {
-        font-size: 0.8rem;
-
-        /* section 1 */
-        
-    }.section1 > div > h1 {
+        font-size: 0.8rem;  
+    }
+    /* section 1 */ 
+    .section1 > div > h1 {
         font-size: 2rem;
     }
     .section1 > div > p {
@@ -446,7 +445,10 @@ footer {
         transition: top 1s ease;
         display: none;
     }
-    nav ul li a span {  /* transfer */
+    nav ul li a {
+        font-size: 0.9rem;  
+    }
+    nav ul li a span {  
         color: #F9AF16;
         font-weight: bold;
     }
